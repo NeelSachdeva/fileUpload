@@ -1,0 +1,16 @@
+@(message: String) 
+@main("File Upload  in Play") {
+
+<h1>File Upload In Play</h1>
+@helper.form(action = routes.Application.uploadFile, 'enctype -> "multipart/form-data") {
+    
+    <input type="file" name="fileUpload">
+    
+    <p>
+        <input type="submit" value="Upload">
+    </p>
+    
+}
+
+
+}
